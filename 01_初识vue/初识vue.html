@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>初始Vue</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+    <body>
+        <div id="root">
+            <!-- 插值语法 -->
+            <h1>hello, {{name}} </h1>
+            <h1>我的年龄是：18</h1>
+        </div>
+        <script type="text/javascript">
+            Vue.config.productionTip = false
+
+            const x = new Vue({
+                el:'#root', // css id选择器, 实例和容器绑定，el用于指定当前vue实例为哪个容器服务，值通常为css选择器字符
+                data:{
+                    name:"李大嘴123", // 提供给el指定的容器使用
+                }
+            })
+        </script>
+    </body>
+</html>
