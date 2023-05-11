@@ -24,14 +24,14 @@
         // setTimeout(() => {
         //     v.$mount('#root')
         // }, 1000)
-
+        let data = {
+            name:'李大嘴', // 函数式，适用于组件
+            address:'北京'
+        }
         const vm = new Vue({
             el:'#root',
             data:function(){
-                return{
-                    name:'李大嘴', // 函数式，适用于组件
-                    address:'北京'
-                }
+                return data
             }
         })
         console.log(vm)
